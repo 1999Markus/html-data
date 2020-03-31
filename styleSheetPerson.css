@@ -1,0 +1,82 @@
+body{
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.header{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 3px;
+    margin: 0px auto;
+}
+.Person{
+    position: relative;
+    display: inline-block;
+    color: #2D4571;
+    text-decoration: none;
+    border: white solid 1px;
+    padding: 1px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 0px 10px;
+}
+.Person:hover{
+    color:#7689A9;
+    text-decoration: underline;
+}
+/* Bis hier hin ist es nur die Kopfzeile*/
+.Überschrift{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+td{
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+th{
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    box-shadow: 0px 0px 4px black;
+}
+.tabelle{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px auto;
+    width: 95%;
+    box-shadow: 0px 0px 3px black;
+}
+.head{
+    background-color:#7689A9;
+}
+.button{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    box-shadow: 0px 0px 4px black;
+    color: white;
+    background-color:#7689A9;;
+    border: none;
+}
+.button:hover{
+    background-color: #2D4571;;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.image{
+    width: 300px;
+    height: 400px;
+    border: dotted 2px gray;
+    margin-left: 20px;
+    margin-top: 20px
+}
+.bild{
+    width: 300px;
+}

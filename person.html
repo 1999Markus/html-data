@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Persönliche Infos</title>
+    <head lang="de-DE">
+        <title>Persönliche Informationen</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styleSheet.css">
+        <script src="jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="styleSheetPerson.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h2>Hier kommen persönliche Infos in Form einer Tabelle hin</h2>
+        <div class="header">
+            <a href="index.html" class="Person">Startseite</a>
+            <a href="person.html" class="Person"> Persönliche Informationen</a>
+            <a href="DS.html" class="Person"> Diskrete Strukturen </a>
+            <a href="ERA.html" class="Person"> Einf. in die Info</a>
+            <a href="impressum.html" class="Person"> Impressum </a>
+        </div>
+        <h2 class="Überschrift">Persönliche Informationen</h2>
+        <table class="tabelle">
+            <tr class="head">
+                <th>Name</th>
+                <th>Universität</th>
+                <th>Studiengang</th>
+                <th>Email-Adresse</th>
+            </tr>
+            <tr>
+                <td>Markus Löhde</td>
+                <td>Technische Universität München</td>
+                <td>Informatik B.Sc</td>
+                <td>markus.loehde@tum.de</td>
+            </tr>
+        </table>
+        <button type="button" class="button">Show me his face!</button>
+        <div class="image">
+            <img src="IMG_1016.jpeg" alt="Markus Visage" class="bild">
+        </div>
+        <script>
+            // the "ready" function
+            $(document).ready(function(){
+                $(".bild").hide();
+                var clicked = true;
+                $(".button").click(function(){
+                    if(clicked){
+                        clicked = false;
+                        $(".bild").show(2000, function(){
+                            $(".button").text("PLEASE STOP THIS!")
+                    });
+                    }
+                    else{
+                        clicked = true;
+                        $(".bild").hide(1000, function(){
+                            $(".button").text("Show me his face!");
+                        });
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
