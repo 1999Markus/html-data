@@ -4,7 +4,6 @@
 }
 .header{
     display: flex;
-    justify-content: center;
     position: -webkit-sticky;
     position: sticky;
     width: 95%;
@@ -14,18 +13,16 @@
     margin: 0px auto;
     top: 0px;
     background-color: white;
+    justify-content: space-evenly;
 }
 .Person{
-    position: relative;
-    display: inline-block;
     color: #2D4571;
     text-decoration: none;
     border: white solid 1px;
     padding: 1px;
     border-radius: 3px;
     background-color: white;
-    margin: 0px 10px;
-    flex: 1 1 0px;
+    text-align: center;
 }
 .Person:hover{
     color:#7689A9;
