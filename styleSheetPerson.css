@@ -1,11 +1,12 @@
 body{
     font-family: 'Baloo Thambi 2', cursive;
+    padding: 15px;
 }
 .header{
     display: flex;
     position: -webkit-sticky;
     position: sticky;
-    width: 95%;
+    width: 97%;
     padding: 10px;
     box-shadow: 0px 0px 4px black;
     border-radius: 3px;
@@ -29,8 +30,11 @@ body{
 }
 /* Bis hier hin ist es nur die Kopfzeile*/
 .Überschrift{
-    margin-left: 20px;
     margin-bottom: 10px;
+}
+.Überschrift-1{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 td{
     width: 150px;
@@ -49,16 +53,18 @@ th{
     padding: 10px;
     border-radius: 5px;
     margin: 0px auto;
-    width: 95%;
+    width: 100%;
     box-shadow: 0px 0px 3px black;
+    flex: 3 1 0px;
 }
 .head{
     background-color:#7689A9;
 }
 .button{
+    align-self: flex-start;
     padding: 10px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-bottom: 20px;
     border-radius: 3px;
     font-size: 15px;
     box-shadow: 0px 0px 4px black;
@@ -73,14 +79,17 @@ th{
     cursor: pointer;
 }
 .image{
-    width: 300px;
-    height: 400px;
+    width: 100%;
     border: dotted 2px gray;
-    margin-left: 20px;
-    margin-top: 20px;
     border-radius: 5px;
+    margin-right: 20px;
+    flex: 2 1 0px;
 }
 .bild{
-    width: 300px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
+}
+.flex{
+    display: flex;
 }
