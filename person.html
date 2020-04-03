@@ -41,11 +41,13 @@
             </div>
             <div class="tabelle">
                     <h2 class="Überschrift-1">About me</h2>
+                    <span class="aboutme-text">
                     Ich studiere derzeit Informatik an der TU München. Nebenbei spiele ich beim Münchener Sportclub Hockey. 
                     Bevor ich nach München gekommen bin um zu studieren, habe ich in Hamburg gelebt. 
                     Dort bin ich auf der Gelehrtenschule des Johanneums gewesen und habe beim Club an der Alster und dem Klipper THC Hockey gespielt. 
                     Außerhalb meiner sportlichen und schulischen Verpflichtungen, habe ich seit fast 4 Jahren eine Freundin
                     und bin Member der legendären Whatsapp-Gruppe: "St(r)ammtsich". Wie man den Namen bereits entnehmen kann sind wir harte Partytiere und der Kiez gehört uns!
+                    </span>
             </div>
         </div>
         <script>
@@ -58,12 +60,14 @@
                         clicked = false;
                         $(".bild").show(2000, function(){
                             $(".button").text("PLEASE STOP THIS!")
+                            $(".aboutme-text").css("font-size","25px");
                     });
                     }
                     else{
                         clicked = true;
                         $(".bild").hide(1000, function(){
                             $(".button").text("Show me his face!");
+                            $(".aboutme-text").css("font-size","18px");
                         });
                     }
                 });
