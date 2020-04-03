@@ -2,6 +2,7 @@ body{
     font-family: 'Baloo Thambi 2', cursive;
     padding: 15px;
     background-color: white;
+    font-size: 18px;
 }
 .header{
     display: flex;
