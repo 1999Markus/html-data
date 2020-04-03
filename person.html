@@ -59,15 +59,13 @@
                     if(clicked){
                         clicked = false;
                         $(".bild").show(2000, function(){
-                            $(".button").text("PLEASE STOP THIS!")
-                            $(".aboutme-text").css("font-size","25px");
+                            $(".button").text("PLEASE STOP THIS!");
                     });
                     }
                     else{
                         clicked = true;
                         $(".bild").hide(1000, function(){
                             $(".button").text("Show me his face!");
-                            $(".aboutme-text").css("font-size","18px");
                         });
                     }
                 });
